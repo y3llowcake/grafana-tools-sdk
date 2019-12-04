@@ -60,7 +60,7 @@ type (
 		Refresh       *BoolString `json:"refresh,omitempty"`
 		SchemaVersion uint        `json:"schemaVersion"`
 		Version       uint        `json:"version"`
-		Links         []link      `json:"links"`
+		Links         []Link      `json:"links"`
 		Time          Time        `json:"time"`
 		Timepicker    Timepicker  `json:"timepicker"`
 		lastPanelID   uint
@@ -125,8 +125,8 @@ type (
 	}
 )
 
-// link represents link to another dashboard or external weblink
-type link struct {
+// Link represents link to another dashboard or external weblink
+type Link struct {
 	Title       string   `json:"title"`
 	Type        string   `json:"type"`
 	AsDropdown  *bool    `json:"asDropdown,omitempty"`
