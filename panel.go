@@ -326,15 +326,19 @@ type (
 		Value    string `json:"value"`
 	}
 	ColumnStyle struct {
-		Alias      *string   `json:"alias"`
-		DateFormat *string   `json:"dateFormat,omitempty"`
-		Pattern    string    `json:"pattern"`
-		Type       string    `json:"type"`
-		ColorMode  *string   `json:"colorMode,omitempty"`
-		Colors     *[]string `json:"colors,omitempty"`
-		Decimals   *uint     `json:"decimals,omitempty"`
-		Thresholds *[]string `json:"thresholds,omitempty"`
-		Unit       *string   `json:"unit,omitempty"`
+		Alias           *string   `json:"alias"`
+		DateFormat      *string   `json:"dateFormat,omitempty"`
+		Pattern         string    `json:"pattern"`
+		Type            string    `json:"type"`
+		ColorMode       *string   `json:"colorMode,omitempty"`
+		Colors          *[]string `json:"colors,omitempty"`
+		Decimals        *uint     `json:"decimals,omitempty"`
+		Thresholds      *[]string `json:"thresholds,omitempty"`
+		Unit            *string   `json:"unit,omitempty"`
+		Link            *bool     `json:"link,omitempty"`
+		LinkURL         *string   `json:"linkUrl,omitempty"`
+		LinkTooltip     *string   `json:"linkTooltip,omitempty"`
+		LinkTargetBlank *bool     `json:"linkTargetBlank,omitempty"`
 	}
 )
 
