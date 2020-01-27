@@ -146,6 +146,7 @@ type (
 		Lines           bool             `json:"lines"`
 		Linewidth       uint             `json:"linewidth"`
 		NullPointMode   string           `json:"nullPointMode"`
+		Options         Options          `json:"options"`
 		Percentage      bool             `json:"percentage"`
 		Pointradius     int              `json:"pointradius"`
 		Points          bool             `json:"points"`
@@ -270,6 +271,9 @@ type (
 		Panels []Panel
 	}
 	CustomPanel map[string]interface{}
+	Options     struct {
+		DataLinks []Link
+	}
 )
 
 // for a graph panel
