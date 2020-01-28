@@ -146,7 +146,7 @@ type (
 		Lines           bool             `json:"lines"`
 		Linewidth       uint             `json:"linewidth"`
 		NullPointMode   string           `json:"nullPointMode"`
-		Options         Options          `json:"options,omitempty"`
+		Options         *Options         `json:"options,omitempty"`
 		Percentage      bool             `json:"percentage"`
 		Pointradius     int              `json:"pointradius"`
 		Points          bool             `json:"points"`
