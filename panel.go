@@ -388,6 +388,7 @@ type Target struct {
 			Order       string `json:"order,omitempty"`
 			OrderBy     string `json:"orderBy,omitempty"`
 			Size        string `json:"size,omitempty"`
+			Missing     string `json:"missing,omitempty"`
 		} `json:"settings"`
 	} `json:"bucketAggs,omitempty"`
 
